@@ -1,0 +1,24 @@
+﻿<Window x:Class="PizzeriaApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzeriaApp"
+        mc:Ignorable="d"
+        Title="Пиццерия Винсент" Height="400" Width="600"
+        Icon="/Resources/ярлык.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FFB653"/>
+        <Image Source="/Resources/логотип.PNG" HorizontalAlignment="Left"/>
+        <Grid Grid.Row="1" Background="#FAE7B5"/>
+        <Grid Grid.Row="2" Background="#FFB653"/>
+        <Frame NavigationUIVisibility="Hidden" Grid.Row="1" Name="StartFrame" />
+        <TextBlock Grid.Row="0" HorizontalAlignment="Right" FontSize="16"
+                   Foreground="White" Margin="5" >Оформите заказ в пиццерии "Винсент" за 5 минут!</TextBlock>
+    </Grid>
+</Window>

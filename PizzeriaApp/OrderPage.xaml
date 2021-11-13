@@ -1,0 +1,50 @@
+﻿<Page x:Class="PizzeriaApp.OrderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PizzeriaApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="600"
+      Title="OrderPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock>Пиццы</TextBlock>
+        <ListBox Name="lbPizza" Grid.Row="1" Height="140" Width="260" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <CheckBox Name="cbPizzaCheese" ToolTipService.Placement="Center" ToolTip="600 руб." Content="Четыре сыра" Checked="CbPizzaCheese_Checked" Unchecked="CbPizzaCheese_Unchecked"/>
+            <CheckBox Name="cbPizzaMeet" ToolTipService.Placement="Center" ToolTip="619 руб." Content="Мясная" Checked="CbPizzaMeet_Checked" Unchecked="CbPizzaMeet_Unchecked"/>
+            <CheckBox Name="cbPizzaHot" ToolTipService.Placement="Center" ToolTip="519 руб." Content="Хот Пепперони" Checked="CbPizzaHot_Checked" Unchecked="CbPizzaHot_Unchecked"/>
+            <CheckBox Name="cbPizzaGrec" ToolTipService.Placement="Center" ToolTip="560 руб." Content="Греческая" Checked="CbPizzaGrec_Checked" Unchecked="CbPizzaGrec_Unchecked"/>
+            <CheckBox Name="cbPizzaBacon" ToolTipService.Placement="Center" ToolTip="589 руб." Content="Ветчина и бекон" Checked="CbPizzaBacon_Checked" Unchecked="CbPizzaBacon_Unchecked"/>
+            <CheckBox Name="cbPizzaHawaiian" ToolTipService.Placement="Center" ToolTip="527 руб." Content="Гавайская" Checked="CbPizzaHawaiian_Checked" Unchecked="CbPizzaHawaiian_Unchecked"/>
+            <CheckBox Name="cbPizzaVegan" ToolTipService.Placement="Center" ToolTip="513 руб." Content="Вегетарианская" Checked="CbPizzaVegan_Checked" Unchecked="CbPizzaVegan_Unchecked"/>
+            <CheckBox Name="cbPizzaMargarita" ToolTipService.Placement="Center" ToolTip="613 руб." Content="Маргарита" Checked="CbPizzaMargarita_Checked" Unchecked="CbPizzaMargarita_Unchecked"/>
+            <CheckBox Name="cbPizzaMushrooms" ToolTipService.Placement="Center" ToolTip="640 руб." Content="Ветчина и грибы" Checked="CbPizzaMushrooms_Checked" Unchecked="CbPizzaMushrooms_Unchecked"/>
+        </ListBox>
+        <TextBlock Grid.Row="0" Grid.Column="1">Напитки и десерты</TextBlock>
+        <ListBox Name="lbFood" Grid.Row="1" Grid.Column="1" Height="140" Width="260" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <CheckBox Name="cbCheesecake" ToolTipService.Placement="Center" ToolTip="179 руб." Checked="CbCheesecake_Checked" Unchecked="CbCheesecake_Unchecked">Чизкейк "Нью-Йорк"</CheckBox>
+            <CheckBox Name="cbCheesecakeChoco"  ToolTipService.Placement="Center" ToolTip="189 руб." Checked="CbCheesecakeChoco_Checked" Unchecked="CbCheesecakeChoco_Unchecked">Чизкейк Шоколадный</CheckBox>
+            <CheckBox Name="cbSweets" ToolTipService.Placement="Center" ToolTip="89 руб." Checked="CbSweets_Checked" Unchecked="CbSweets_Unchecked">Узелки сладкие</CheckBox>
+            <CheckBox Name="cbPancake" ToolTipService.Placement="Center" ToolTip="239 руб." Checked="CbPancake_Checked" Unchecked="CbPancake_Unchecked">Сырники</CheckBox>
+            <CheckBox Name="cbDonat" ToolTipService.Placement="Center" ToolTip="119 руб." Checked="CbDonat_Checked" Unchecked="CbDonat_Unchecked">Клубничный Донат</CheckBox>
+            <CheckBox Name="cbPepsi" ToolTipService.Placement="Center" ToolTip="89 руб." Checked="CbPepsi_Checked" Unchecked="CbPepsi_Unchecked">Пепси</CheckBox>
+            <CheckBox Name="cbPepsiLight" ToolTipService.Placement="Center" ToolTip="80 руб." Checked="CbPepsiLight_Checked" Unchecked="CbPepsiLight_Unchecked">Пепси Light</CheckBox>
+            <CheckBox Name="cbLiptonLemon" ToolTipService.Placement="Center" ToolTip="99 руб." Checked="CbLiptonLemon_Checked" Unchecked="CbLiptonLemon_Unchecked">Липтон Айс Ти Лимонный</CheckBox>
+            <CheckBox Name="cbLiptonPeach" ToolTipService.Placement="Center" ToolTip="99 руб." Checked="CbLiptonPeach_Checked" Unchecked="CbLiptonPeach_Unchecked">Липтон Айс Ти Персиковый</CheckBox>
+        </ListBox>
+        <TextBox Name="tbPromocode" Grid.Row="1" VerticalAlignment="Bottom" Margin="0 0 0 35"></TextBox>
+        <Button Name="btnPromocode" Grid.Row="1" VerticalAlignment="Bottom" Click="BtnPromocode_Click">Применить промокод</Button>
+        <Button Name="btnOrder" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" Margin="0 0 0 35" Click="BtnOrder_Click">Заказать</Button>
+        <Button Name="btnGoBack" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" Click="BtnGoBack_Click">Выход</Button>
+    </Grid>
+</Page>

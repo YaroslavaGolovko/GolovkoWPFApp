@@ -1,0 +1,27 @@
+﻿<Page x:Class="PizzeriaApp.StartPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PizzeriaApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="600"
+      Title="StartPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="1" Grid.Column="0" Name="btnInfo" Click="BtnInfo_Click">О приложении</Button>
+        <Button Grid.Row="2" Grid.Column="0" Name="btnReview" Click="BtnReview_Click">Акция!</Button>
+        <Button Grid.Row="1" Grid.Column="1" Name="btnOrder" Click="BtnOrder_Click">Сделать заказ</Button>
+        <Button Grid.Row="2" Grid.Column="1" Name="btnExit" Click="BtnExit_Click">Выход</Button>
+    </Grid>
+</Page>

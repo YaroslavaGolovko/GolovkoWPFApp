@@ -1,0 +1,22 @@
+﻿<Page x:Class="PizzeriaApp.ReviewPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PizzeriaApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="600"
+      Title="ReviewPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" VerticalAlignment="Bottom" TextAlignment="Center" FontSize="16">Специальное предложение: <LineBreak></LineBreak> оставьте отзыв и получите уникальный промокод!</TextBlock>
+        <TextBox Grid.Row="1" Name="tbReview" VerticalAlignment="Center" Height="80" Width="400" FontFamily="Verdana" FontSize="14"></TextBox>
+        <Button Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100 10 0 0" Name="btnSaveFile" Click="BtnSaveFile_Click">Получить промокод</Button>
+        <Button Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 10 100 0" Name="btnGoBack" Click="BtnGoBack_Click">Выход</Button>
+    </Grid>
+</Page>

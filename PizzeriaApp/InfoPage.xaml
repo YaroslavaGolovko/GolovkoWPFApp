@@ -1,0 +1,24 @@
+﻿<Page x:Class="PizzeriaApp.InfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PizzeriaApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="600"
+      Title="InfoPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="2" VerticalAlignment="Top" Name="btnGoBack" Margin="15" Click="btnGoBack_Click">Выход</Button>
+        <TextBlock Grid.Row="1" FontSize="13" TextWrapping="Wrap" Width="480" TextAlignment="Center">С помощью данного приложения можно:
+<LineBreak></LineBreak>1)оформить заказ в пиццерии Винсент с доставкой или самовывозом;
+<LineBreak></LineBreak>2)ознакомиться с информацией об актуальных акциях и специальных предложениях;
+<LineBreak></LineBreak>3)оставить отзыв.
+        </TextBlock>
+    </Grid>
+</Page>
